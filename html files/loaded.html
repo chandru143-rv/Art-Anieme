@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .inner_loader{
+        padding:0%;
+        margin:0%;
+        box-sizing: border-box;
+    }
+    .main{
+        background-color: black;
+        height:100vh;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .ring{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+       animation:animat 2s linear infinite;
+        border-radius: 50% ;
+    }
+    .ring::before{
+        content:' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:100%;
+        border-radius: 50%;
+        box-shadow:0 0 3px #ffff;
+    }
+    @keyframes animat {
+        0%{
+        box-shadow:1px 5px 2px #c724bf;
+        transform: rotate(0deg);
+        }
+       50%{
+        box-shadow:1px 5px 2px #24b4c7;
+        transform: rotate(180deg);
+        }
+       100%{
+        box-shadow:1px 5px 2px #1d41e4;
+        transform: rotate(360deg);
+        }
+        
+    }
+    .lod{
+        color: #c724bf;
+        font-size: 400;
+        text-transform:capitalize;
+        letter-spacing:1.2px;
+      animation:text 2s infinite ease-in-out;
+    }
+    @keyframes text {
+        0%{
+            opacity: 1;
+        }
+    100%{
+        opacity:0;
+    }
+    }
+    </style>
+</head>
+<body class="inner_loader">
+
+    <div class="main">
+         <div class="ring"></div>
+         <span class="lod">Loading...</span>
+    </div>
+
+    </div>
+    
+</body>
+</html>

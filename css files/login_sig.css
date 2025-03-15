@@ -1,0 +1,235 @@
+
+     section{
+        display:flex;
+        align-items: center;
+        border: 3px solid black;
+        width:300px;
+        padding: 50px;
+        margin-left:5%;
+        margin-top:5%;
+        border-radius:20%;
+        background-color:rgb(255,255,255,0.2);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+
+     }
+    .topi{
+        margin-left:100px;
+        text-decoration:underline;
+        text-transform: uppercase;
+        text-decoration-color:purple;
+    }
+    .login-body{
+        
+        background-image: url("../images/anime-girl-with-purple-hair-headphones-enjoying-cherry-blossoms_719585-12023.avif");
+        background-repeat: no-repeat;
+       background-position:100%;
+     
+         height:70vh !important;
+    background-size:cover;
+    }
+    #username{
+        width:100%;
+        height:30px;
+        border-radius:10px;
+    }
+    #Password{
+        width:100%;
+        height:30px;
+        border-radius:10px;
+      
+    }
+    #age{
+      width:100%;
+        height:30px;
+        border-radius:10px;
+    }
+    label{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    #sig{
+        border-radius:10px;
+        background-color: rgb(212, 81, 212);
+        padding:10px;
+        
+    }
+    #sub{
+        border-radius:10px;
+        background-color: rgb(212, 81, 212);
+        padding:10px;
+       
+    }
+    .buttons-lo{
+        margin-top:50px;
+        display: flex;
+        align-items: center;
+        gap:150px;
+    }
+  .tit{
+    text-transform:uppercase;
+   text-decoration: underline;
+  
+        text-decoration-color:purple;
+    font-weight: bolder;
+    font-size: x-large;
+  }
+
+  @media only screen and (max-width: 600px) {
+    section{
+        margin-top:35px;
+        width:60%;
+        display: flex;
+        border-radius:40px;
+        align-items: center;
+        margin-left:2%;
+    }
+   
+   .login-body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    background-repeat: no-repeat;
+       background-position:100%;
+     
+         height:100vh;
+    background-size:cover;
+   }
+
+    .tit{
+        text-transform:uppercase;
+        font-size: medium;
+    }
+    .topi{
+        font-size: large;
+        margin-left:40px;
+    }
+    #username{
+        width:80%;
+        height:30px;
+        border-radius:10px;
+    }
+    #Password{
+        width:80%;
+        height:30px;
+        border-radius:10px;
+        
+    }
+    #age{
+      width:80%;
+        height:30px;
+        border-radius:10px;
+    }
+    .buttons-lo{
+        margin-top:50px;
+        display: flex;
+        align-items: center;
+        gap:80px;
+    }
+  }
+
+  @media only screen and (orientation: landscape){
+    .section-1{
+      display:flex;
+      align-items: center;
+      border: 3px solid black;
+      width:300px;
+      padding:25px;
+      margin-left:5%;
+      
+      border-radius:10%;
+      background-color:rgb(255,255,255,0.2);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+    }
+    section{
+        display:flex;
+        align-items: center;
+        border: 3px solid black;
+        width:300px;
+        padding:25px;
+        margin-left:5%;
+        border-radius:10%;
+        background-color:rgb(255,255,255,0.2);
+        backdrop-filter: blur(5px);
+        
+
+     }
+     .login-body{
+        
+        background-image: url("../images/anime-girl-with-purple-hair-headphones-enjoying-cherry-blossoms_719585-12023.avif");
+        background-repeat: no-repeat;
+       background-position:100%;
+     
+         height:95vh;
+      background-size:cover;
+    }
+  }
+
+  
+/* loder styles */
+
+.inner_loader{
+  padding:0%;
+  margin:0%;
+  box-sizing: border-box;
+}
+.main{
+  background-color: black;
+  height:100vh;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.ring{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+ animation:animat 2s linear infinite;
+  border-radius: 50% ;
+}
+.ring::before{
+  content:' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  border-radius: 50%;
+  box-shadow:0 0 3px #ffff;
+}
+@keyframes animat {
+  0%{
+  box-shadow:1px 5px 2px #c724bf;
+  transform: rotate(0deg);
+  }
+ 50%{
+  box-shadow:1px 5px 2px #24b4c7;
+  transform: rotate(180deg);
+  }
+ 100%{
+  box-shadow:1px 5px 2px #1d41e4;
+  transform: rotate(360deg);
+  }
+  
+}
+.lod{
+  color: #c724bf;
+  font-size: 400;
+  text-transform:capitalize;
+  letter-spacing:1.2px;
+animation:text 2s infinite ease-in-out;
+}
+@keyframes text {
+  0%{
+      opacity: 1;
+  }
+100%{
+  opacity:0;
+}
+}
+
+   
+    
