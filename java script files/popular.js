@@ -478,7 +478,7 @@ var comevlist=document.getElementById("comevlist")
              var pwd=document.getElementById("Password").value;
              
             if(usn==b.username && pwd==b.password){
-               location="../html files/home.html"
+               location="./html files/home.html"
             }
             else{
               alert("wrong password or username")
@@ -502,10 +502,10 @@ function str(){
  const customer=[]
  customer.push(user,pwd,age)
  console.log(customer)
-    location="../html files/home.html"
+    location="./html files/home.html"
 }
 function goilog() {
-     location="../html files/login.html"
+     location="./html files/login.html"
 }
 
 
