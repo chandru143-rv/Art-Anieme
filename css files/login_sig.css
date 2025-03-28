@@ -11,7 +11,11 @@
         background-color:rgb(255,255,255,0.2);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
-
+     }
+     .login-body{
+      overflow: hidden;
+      width:100%;
+      height:100%;
      }
     .topi{
         margin-left:100px;
@@ -20,13 +24,13 @@
         text-decoration-color:purple;
     }
     .login-body{
-        
         background-image: url("../images/anime-girl-with-purple-hair-headphones-enjoying-cherry-blossoms_719585-12023.avif");
-        background-repeat: no-repeat;
-       background-position:100%;
-     
-         height:70vh !important;
-    background-size:cover;
+       
+         height:100% !important;
+         width:100% !important;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
     }
     #username{
         width:100%;
